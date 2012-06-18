@@ -1,0 +1,47 @@
+﻿<Window x:Class="WordamentSolver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wordament Solver" Height="350" Width="550">
+    <Window.Resources>
+        <Style x:Key="TextBoxStyle" TargetType="TextBox">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="MaxLength" Value="2"/>
+            <Setter Property="CharacterCasing" Value="Upper"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF5A97D4"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="MinHeight" Value="25"/>
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom">
+            <Button Click="Solve_Click" Style="{StaticResource ButtonStyle}">Solve</Button>
+            <Button Click="Clear_Click" Style="{StaticResource ButtonStyle}">Clear</Button>
+        </StackPanel>
+        <TextBox Name="txtResults" DockPanel.Dock="Right" Width="200" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <UniformGrid Rows="4" Columns="4">
+            <TextBox Name="txt0" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt1" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt2" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt3" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt4" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt5" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt6" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt7" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt8" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt9" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt10" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt11" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt12" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt13" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt14" Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Name="txt15" Style="{StaticResource TextBoxStyle}"/>
+        </UniformGrid>
+    </DockPanel>
+</Window>

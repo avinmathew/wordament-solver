@@ -1,0 +1,5 @@
+# Wordament Solver
+
+[Wordament](http://wordament.com) is a Windows Phone game that is similar to [Boggle](http://en.wikipedia.org/wiki/Boggle) but occasionally serves up two letters in a box. This WPF .NET application finds words based on the [Zyzzyva North American lexicon](http://zyzzyva.net/wordlists.shtml) (although this is easily changeable) and presents them to the user in reverse order of length. It pre-filters the lexicon by the entered characters and builds a simple Trie for extremely fast searching and aborting paths with non-existent prefixes.
+
+While there are plenty of Boggle solvers, during the time of developing the application I didn't realise Wordament was based off Boggle. Nonetheless, it was an interesting exercise in algorithm development. As it is an extremely simple application, I've just included the algorithmic logic in the window code-behind.
